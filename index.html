@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("/w3images/mac.jpg");
+  min-height: 100%;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-bottom: 3px solid black;
+  border-radius: 10px;
+}
+th{
+  background-color: yellowgreen;
+}
+</style>
+
+
+
+
+<body style="background-color: rgba(95, 130, 194, 0.8)">
+  
+<!-- Navbar (sit on top) -->
+<div class="w3-top" style="background-image: linear-gradient(rgba(255, 255, 0, 0.400), rgba(0, 238, 255, 0.4));">
+  <div class="w3-bar w3-card" id="myNavbar">
+    <a href="#home" class="w3-bar-item w3-button w3-wide" style="padding: 0px;"><img src="logo.jpg" alt="Logo" width="81%" height="81%"></a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button"><i class="fa fa-user-secret"></i> RÓLUNK ÉS A PROJEKTRŐL</a>
+      <a href="#teach" class="w3-bar-item w3-button"><i class="fa fa-th"></i> TANÍTÁS</a>
+      <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-users"></i> BALA-PROJECT</a>
+      <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> KAPCSOLAT</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="#about" class="w3-bar-item w3-button"><i class="fa fa-user-secret"></i> RÓLUNK ÉS A PROJEKTRŐL</a>
+  <a href="#teach" class="w3-bar-item w3-button"><i class="fa fa-th"></i> TANÍTÁS</a>
+  <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-users"></i> BALA-PROJECT</a>
+  <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> KAPCSOLAT</a>
+</nav>
+
+
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container w3-grayscale-min" style="background-image: url('magaspart1.jpg')" id="home">
+  <div class="w3-display-left w3-text-white" style="padding:48px; width: 100%;">
+    <span class="w3-jumbo w3-hide-small">BalaZOOM</span><br>
+    <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">A Balaton: új virtuális tér</a></p>
+  </div> 
+  <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px;">
+    <a target="_blank" href="https://www.facebook.com/balaprojekt"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <a target="_blank" href="https://sketchfab.com/jorosbencetamas"><i class="sketchFab"><img src="https://static.sketchfab.com/img/press/logos/sketchfab-logo-white.svg" alt="SketchFab Icon" width="15" height="17" style="background-color: grey;"> </i></a>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <a target="_blank" href="https://hu.linkedin.com/in/bence-tam%C3%A1s-j%C5%91r%C3%B6s-932a4720b"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+  </div>
+</header>
+
+<!-- About Section -->
+<div class="w3-container" style="padding:200px 16px; background-image: linear-gradient(rgba(95, 130, 194, 0.8), rgba(0, 238, 255, 0.400))" id="about">
+  <h3 class="w3-center">RÓLUNK ÉS A PROJEKTRŐL</h3>
+  <p class="w3-center w3-large">FŐBB TEVÉKENYSÉGEINK PÁR SZÓBAN</p>
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+    <div class="w3-quarter">
+      <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
+      <p class="w3-large">Oktatás</p>
+      <p>Már 2016 óta oktatjuk a fiatal nemzedékeket a Balaton múltjáról és jövőjéről egyaránt, offline és online formában egyaránt.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Szenvedély</p>
+      <p>A Projekt résztvevői elhivatott Balaton-fanok: igyekszünk minden fórumon, konferencián etc. képviseltetni magunkat.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-diamond w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Balatoni kincsek</p>
+      <p>A Balaton mind művészeti, természeti, történelmi,  értékeit tekintve az egész világon páratlan: a fotók, filmek feldolgozásától az oktatásig a kooperatív kutatócsoportunkban azzal foglalkozunk, amivel szeretnénk.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Technikai háttér</p>
+      <p>Az adatfeldolgozás és az adatközlés módszereiban nagy hangsúlyt kapnak a modern technológiák. Az innovatív ötleteket mindennél fontosabbnak tartjuk.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Oktatás -->
+<div id="teach" class="w3-container" style="padding:128px 16px 16px 16px; background-image:  url('firstBackground.jpg')">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <h3 style="color:white">ÖTLETEK A BEADANDÓ MUNKÁKHOZ:</h3>
+      <p><a href="#work" class="w3-button w3-black"><i class="fa fa-th"> </i>Nézd meg az eddig elkészült beadandókat, feldolgozásokat, 3D modelleket stb.</a></p>
+    <br>
+    </div>
+  </div>
+  <div>
+    <h3 style="padding: 0px 0px 0px 16px;color:white">OKTATÁS</h3>
+      <p style="padding: 0px 0px 0px 16px;"><a href="\Users\Bence\Desktop\Own\tanterv.pdf" class="w3-button w3-black"><i class="fa fa-th"> </i>Követelményrendszer</a></p>
+      <p style="padding: 0px 0px 0px 16px;color:white">IRODALMAK A <i>2021/2022/2</i>-ES FÉLÉVRE <br><i>(Szerzőre vagy évszámra kattintva növekvő sorba lehet rendezni a listát.)</i><br></p>
+      <table id="tablazat" style= "text-align:center; width:100%; border: 1px solid blue; background-color: lightblue;">
+        <script src="index.js"></script>
+      </table>
+  </div>
+</div>
+
+<!-- Team Section -->
+<div class="w3-container" style="padding:128px 16px; background-image: linear-gradient(rgba(95, 130, 194, 0.8), rgba(0, 238, 255, 0.400));" id="team">
+  <h3 class="w3-center">A CSAPATUNKRÓL</h3>
+  <p class="w3-center w3-large">Rólunk, a lelkes tagokról néhány infó</p>
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <div class="w3-container" style="background-color: lightyellow;">
+          <h3>Dr. Mátay Mónika</h3>
+          <img src="moni.jpg" alt="Mátay Mónika" width="100%" height="100%">
+          <p class="w3-opacity">Oktató</p>
+          <p>Mátay Mónika (PhD 2003) az Eötvös Loránd Tudományegyetem Történeti Intézetében tanít és a kőszegi iASK Intézet munkatársa. Vendégtanárként több külföldi felsőoktatási intézményben, egyebek mellett a Rutgers Egyetemen (New Jersey), a berlini Humboldt Egyetemen, a Közép-Európa Egyetemen és a Trieszti Egyetemen is megfordult. Publikációi között megtalálható egy, a férfiak és nők közötti privát vitákat elemző monográfia, a századfordulós Budapest bűnözéstörténetét feldolgozó szerkesztett kötet, változatos tematikájú könyvfejezetek és cikkek, amelyek között egyaránt szerepel a modern európai nyilvánosságot áttekintő tanulmány és magyar betyár szerepét feldolgozó szöveg. </p>
+          <p><button style="background-color: yellowgreen;" class="w3-button w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        
+        <div class="w3-container" style="background-color: lightyellow;">
+          <h3>Nagy Róbert</h3>
+          <img src="anonymus.jpg" alt="Jőrös Bence" width="100%" height="100%">
+          <p class="w3-opacity">Kutató</p>
+          <p>Tanulmányaimat az ELTE történelem alapszakán, majd a filmtudományi mesterszakon végeztem. Jelenleg a Gazdaság- és Társadalomtudományi Intézet doktorandusz hallgatója vagyok, ahol a fő kutatási területem a történelmi filmek gyártástörténete, valamint a Balatonhoz szorosan kapcsolódó filmek vizsgálata.</p>
+          <p><button style="background-color: yellowgreen;" class="w3-button w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        
+        <div class="w3-container" style="background-color: lightyellow;">
+          <h3>Béresi Ákos</h3>
+          <img src="akos.jpg" alt="Béresi Ákos" width="100%" height="100%">
+          <p class="w3-opacity">Kutató</p>
+          <p>Béresi Ákos vagyok, 1981-ben születtem. A Balaton gyermekkorom óta életem része, jelenleg kutatóként is ez a fő szakterületem. Az ELTÉ-n diplomáztam történelemből, jelenleg a Gazdaság- és társadalomtörténet szakirányon vagyok doktorjelölt, illetve ugyanitt balatoni tematikájú kurzust is vezetek.</p>
+          <p><button style="background-color: yellowgreen;" class="w3-button w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        
+        <div class="w3-container" style="background-color: lightyellow;">
+          <h3>Jőrös Bence Tamás</h3>
+          <img src="bence.jpg" alt="Jőrös Bence" width="100%" height="100%">
+          <p class="w3-opacity">Kutató</p>
+          <p>Jőrös Bence vagyok, budapesti születésű, de Balatonakarattyán nőttem fel. Szívem csücske a Balaton, kedvenc térségem a keleti-medence. Jelenleg több helyen dolgozok és tanulok párhuzamosan, egyben doktorimat is írom (hálózatelemzés), amivel szeretnék hozzájárulni a térség történelmének feltárásához.</p>
+          <p id="contactBence"><a href = "mailto: rexomber@gmail.com"><button style="background-color: yellowgreen;" class="w3-button w3-block"><i class="fa fa-envelope"></i> Contact</button></a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Promo Section "Statistics" -->
+<div class="w3-container w3-row w3-center w3-dark-grey w3-padding-64">
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">5+</span>
+    <br>Partner
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">6+</span>
+    <br>Évnyi oktatás
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">50+</span>
+    <br>Tanuló
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">100+</span>
+    <br>Találkozó
+  </div>
+</div>
+
+<!-- Work Section -->
+<div class="w3-container" style="padding:128px 16px; background-image: url(secBackground.png); background-size: 100%;" id="work">
+  <h3 class="w3-center">Munkáink</h3>
+  <p class="w3-center w3-large">Ezek azok, amikre büszkék vagyunk</p>
+
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <div class="w3-container" style="background-image: linear-gradient(rgba(95, 130, 194, 0.8), rgba(0, 238, 255, 0.800));">
+          <h3>3D MODELLEK</h3>
+          <img src="templom3D.jpg" alt="A balatonkenesei református templom" width="100%" height="100%">
+          <p style="color: white;">Agisoft Photoscan, SketchUp munkák a SketchFab oldalán</p>
+          <p>Egy kisebb galléria az elkészült 3D művekről. Minden kép alatt megtalálható a SketchFab oldalra mutató link is, ahol meg lehet tekinteni a munkákat 3D-ben is.</p>
+          <p><button style="background-color: yellowgreen;" class="w3-button w3-block"> >> TOVÁBB</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        
+        <div class="w3-container" style="background-image: linear-gradient(rgba(95, 130, 194, 0.8), rgba(0, 238, 255, 0.800));">
+          <h3>PUBLIKÁCIÓK, TANULMÁNYOK</h3>
+          <img src="furediHistoria.png" alt="Füredi História" width="100%" height="100%">
+          <p style="color: white;">Kutatóink írták ezeket a megjelent tanulmányokat.</p>
+          <p>Ha egy kollégának olyan munkája jelenik meg kis csoportunkban, amire büszke és el is szeretné újságolni ezt a nagyvilágnak, azok erre az oldalra felkerülnek!</p>
+          <p><button style="background-color: yellowgreen;" class="w3-button w3-block"> >> TOVÁBB</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        
+        <div class="w3-container" style="background-image: linear-gradient(rgba(95, 130, 194, 0.8), rgba(0, 238, 255, 0.800));">
+          <h3>OKTATÁSI SEGÉDANYAGOK </h3>
+          <img src="oktatasiSegedanyag.jpg" alt="Tihanyi füveskönyv" width="100%" height="100%">
+          <p style="color: white;">Diasorok, PDF-ek stb.</p>
+          <p>Talán a hallgatóknak a leghasznosabb ez a kis fülecske! :)</p>
+          <p><button style="background-color: yellowgreen;" class="w3-button w3-block"> >> TOVÁBB</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        
+        <div class="w3-container" style="background-image: linear-gradient(rgba(95, 130, 194, 0.8), rgba(0, 238, 255, 0.800));">
+          <h3>KONFERENCIÁK, FELHÍVÁSOK</h3>
+          <img src="konferencia.jpg" alt="Jőrös Bence" width="100%" height="100%">
+          <p style="color: white;">A Balatonnal kapcsolatos konferenciák linkgyűjteménye</p>
+          <p>Félig online-félig offline világunkban talán túl sok minden történik közel azonos időben. Ebben a röveid bejegyzésben igyekeztünk összeszedni azokat a linkeket, amik kutatócsoportunk számára releváns tudományos/civil eseményekre mutatnak rá.</p>
+          <p id="contactBence"><button style="background-color: yellowgreen;" class="w3-button w3-block"> >> TOVÁBB</button></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Skills Section -->
+<div class="w3-container w3-light-grey w3-padding-64">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <h3>Jelenlegi témáink (2021/2022/2)</h3>
+      <p>Az ábra egy százalékos megoszlást mutat arról, hogy diákjaink között mik a legnépszerűbb kutatási témák és ezek hogyan oszlanak meg.</p>
+      <p>Természetesen a kutatási téma kiválasztása egy mentor segítségével történik, de abszolút egyéni érdeklődési alapon. Ha szeretnél bárminek utánanézni, amihez bármilyen módon kapcsolódik a Balaton - bátorítunk, hogy keress fel minket!</p>
+    </div>
+    <div class="w3-col m6">
+      <p class="w3-wide"><i class="w3-margin-right"></i>A 19. század-i Balaton története (kultúra, nevelés stb.)</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-center" style="width:55%">55%</div>
+      </div>
+      <p class="w3-wide"><i class="w3-margin-right"></i>A 20-21. századi Balaton története</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-center" style="width:15%">15%</div>
+      </div>
+      <p class="w3-wide"><i class="w3-margin-right"></i>Balaton a filmekben (tárgyi kultúra, összehasonlítás): 3 fő</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-center" style="width:30%">30%</div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Contact Section -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
+  <h3 class="w3-center">KAPCSOLAT</h3>
+  <p class="w3-center w3-large">Ha valami felkeltette az érdeklődését, örömmel várjuk üzenetét az alábbi elérhetőségek egyikén:</p>
+  <div style="margin-top:48px">
+    <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Magyarország, 1088 Budapest, Múzeum körút 4/A, B, C, D, F, I; valamint Múzeum körút 6–8, 6–8/A</p>
+    <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: rexomber@gmail.com</p>
+    <br>
+    <!-- Image of location/map -->
+    
+    <div class="mapouter" style="margin: 0 auto;">
+      <div class="gmap_canvas">
+      <iframe class="gmap_iframe" frameborder="0" scrolling="yes" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=1125&amp;height=475&amp;hl=en&amp;q=ELTE FACULTY OF HUMANITY&amp;t=&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+      </iframe>
+      </div>
+      <style>.mapouter{position:relative;align-items: center; text-align:center;width:1125px;height:475px;border: dotted}.gmap_canvas {overflow:hidden;background:none!important;width:1120px;height:470px;}.gmap_iframe {width:1125px!important;height:475px!important;}
+      </style>
+      
+  </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+    
+  <div class="w3-xlarge w3-section">
+    <a target="_blank" href="https://www.facebook.com/balaprojekt"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <a target="_blank" href="https://sketchfab.com/jorosbencetamas"><i class="sketchFab"><img src="https://static.sketchfab.com/img/press/logos/sketchfab-logo-white.svg" alt="SketchFab Icon" width="22" height="22" style="background-color: grey;"> </i></a>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <a target="_blank" href="https://hu.linkedin.com/in/bence-tam%C3%A1s-j%C5%91r%C3%B6s-932a4720b"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+  </div>
+  <a href="#home" style="padding: 0px;"><img src="logo.jpg" alt="Logo" width="5%" height="5%"></a>
+  </footer>
+
+
+</body>
+</html>
